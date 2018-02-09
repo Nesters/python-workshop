@@ -6,6 +6,8 @@ The goal
 
 Download the *Most Viral images on the Internet ©* from `imgur <https://imgur.com/>`_.
 
+.. _first-setup:
+
 The setup
 ---------
 
@@ -52,7 +54,10 @@ In conclusion
 While the script might is far from perfect - a lot of images, if not even most on *imgur* now are gifs or videos, you
 are already on the way to getting a nice dose of internet humor straight to your hard drive!
 
+Are you ready to take a crack at creating a :doc:`second`?
+
 Solution
 --------
 
-If you feel like taking a peek - you can check :download:`my solution <first.py>`.
+If you feel like taking a peek - you can check :download:`my solution <first.py>` with way too many comments, to help
+you understand what the code does.
