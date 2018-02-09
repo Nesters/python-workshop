@@ -7,21 +7,21 @@
 5. **Perform in-depth analysis**
 6. Communicate your results
 
-#### In Data Analysis we mostly focus on Step 2 to 5
+#### In Data Analysis we mostly focus on Step 2 to 5.
 
 ### Frame the problem
 
-> Before you can solve a problem, you need to define the problem.
+Before you can solve a problem, you need to define the problem.
 
 ### Collecting Data
 
->  Once you've defined the problem, you'll need data to give you the insight needed to develop a solution
+Once you've defined the problem, you'll need data to give you the insight needed to develop a solution
 
 ### Processing the Data for Analysis
 
-> After you've collected all the raw data, you'll need to process it before you can do any analysis.
+After you've collected all the raw data, you'll need to process it before you can do any analysis.
 
-> You will see errors that corrupt your analysis: null instead of zero, missing values, duplicates
+You will see errors that corrupt your analysis: null instead of zero, missing values, duplicates
 
 Common errors:
 1. Missing values
@@ -31,20 +31,20 @@ Common errors:
 
 ### Explore the Data
 
-> When your data is clean, you should start playing with it.
+When your data is clean, you should start playing with it.
 
-> The difficulty here is coming up with ideas that are likely to tu
+The difficulty here is coming up with ideas that are likely to tu
 
-> At this point, you can now begin to trace these patterns to analyze the data more deeply.
+At this point, you can now begin to trace these patterns to analyze the data more deeply.
 
 ### Perform in-depth analysis
 
-> This step of the process is where you will need to apply your statistical, mathematical and technological knowledge, and leverage all the data science tools at your disposal to crunch the data and find every insight you can.
+This step of the process is where you will need to apply your statistical, mathematical and technological knowledge, and leverage all the data science tools at your disposal to crunch the data and find every insight you can.
 
 ### Communicate your results
 
-> You can now combine all of those qualitative insights with data from your quantitative analysis to craft a story that moves people to action.
+You can now combine all of those qualitative insights with data from your quantitative analysis to craft a story that moves people to action.
 
-> Your ability to properly communicate your results will define the difference between action and inaction on your proposals.
+Your ability to properly communicate your results will define the difference between action and inaction on your proposals.
 You need to craft a compelling story that ties in your data with their knowledge.
 
