@@ -12,6 +12,8 @@ The setup
 The setup is exactly the same as in :ref:`first-setup` in the first task, so you can just create another file in your
 current project, and remember to create a *Run Configuration* for it as well to make for easier debugging!
 
+.. _second-setup:
+
 The pieces
 ----------
 
@@ -19,7 +21,7 @@ Reddit is a great source of content, whether you're looking for news, humor or p
 an office which has blocked the access to Reddit, so you want to build a tool which quickly gets the top 10 links from
 your favorite subreddit before you head out to work.
 
-As before, to save time, I've done the exploring work for you (Which, in my opinion, is one of my favorite things in a
+As before, to save time, I've done the exploring work for you (which, in my opinion, is one of my favorite things in a
 webscraping project, but, as I said before, at this point, we definitely don't have a lot of time left)!
 
 So, first things first - I want to bring your attention to one of my favorite packages in the standard library - :code:`argparse`.
@@ -54,7 +56,7 @@ Now to the actual Reddit part.
 How do we get a a link to the top posts of a subreddit? If you're not familiar with Reddit, the format is *https://www.reddit.com/somesubredditname/top*,
 so you need to dynamically build a link, to perform a request.
 
-What if a subreddit doesn't exist. Traditionally, you'd get a 404 response, but Reddit redirects you to a search. Of course,
+What if a subreddit doesn't exist? Traditionally, you'd get a 404 response, but Reddit redirects you to a search. Of course,
 since the subreddit doesn't exist, the search will come up empty, so you need to think of a way to find out if your request
 led you to an empty search page.
 
@@ -86,7 +88,8 @@ comment count!
 
 Now the final piece of the puzzle - writing it to CSV. You need a destination where to write the file - you can either
 hardcode the path to the final CSV, like the current user's Document folder, or, you can add an argument to your :code:`ArgumentParser`
-to let the user supply the output path. But, be aware, it's error prone, so you should be prepared for handling exceptions.
+to let the user supply the output path. But, be aware, accepting user input in terms of file I/O is error prone, so you
+should be prepared for handling exceptions.
 
 As for generating the actual CSV, you don't have to do anything yourself - there's the :code:`csv` library for that!
 The `documentation <https://docs.python.org/3/library/csv.html>`__ is great with a lot of examples. Here's a basic one
@@ -108,6 +111,8 @@ Since we live in a day and age where the most popular public platforms, includin
 it's not really necessary to take the webscraping approach, but, at least now you have the knowledge to build handy CLI
 tools for your daily automated computing needs, and you know how to create CSV files programmatically with Python, therefore
 if you decide to join Nester's data-analysis workshop, you have the knowledge to create your own datasets :)
+
+Now, it's time to write a :doc:`third`!
 
 Solution
 --------

@@ -13,7 +13,7 @@ about getting and storing data from the internet and to make you more comfortabl
 
 You might find interesting that this page was built with `Sphinx <http://www.sphinx-doc.org>`__ - a tool which
 most of the Python package authors use to generate their documentation with, including the packages you're about to use -
-`requests <http://docs.python-requests.org/en/master/>`__ and `BeatifulSoup <https://www.crummy.com/software/BeautifulSoup/bs4/doc/>`__!
+`requests <http://docs.python-requests.org/en/master/>`__ and `BeautifulSoup <https://www.crummy.com/software/BeautifulSoup/bs4/doc/>`__!
 
 Oh, and the documentation for the `Python language <https://docs.python.org/3/>`__ itself is generated with Sphinx too!
 
@@ -53,6 +53,7 @@ tasks in time - at least you'll have something to keep you busy if you find your
 
    first
    second
+   third
 
 :ref:`search`
 

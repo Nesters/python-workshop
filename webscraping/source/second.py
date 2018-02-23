@@ -40,7 +40,8 @@ class RedditScraperResponseException(RedditScraperException):
 
 class RedditScraperWriteException(RedditScraperException):
     """
-
+    And an exception we'll throw if anything goes wrong with writing the
+    CSV file.
     """
 
 
@@ -124,7 +125,7 @@ class RedditScraper(object):
         # Business as usual - initialize BeautifulSoup with our HTML and the default parser.
         soup = bs4.BeautifulSoup(self._response.text, 'html.parser')
 
-        # Get the first 10 posts within the reponse
+        # Get the first 10 posts within the response
         entries = soup.find_all(class_='thing')[:10]
 
         # Well, we're dealing with writing to a user supplied location
@@ -149,8 +150,7 @@ class RedditScraper(object):
 
                 # We iterate over the posts
                 for post in self._get_entry_iter(entries):
-                    # And write the row, by supplying the only argument
-                    # Conveniently, writerow() accepts both
+                    # And write the row, by supplying the dictionary
                     writer.writerow(post)
 
         # the OSError is a nice common denominator for these kinds of errors
@@ -173,7 +173,7 @@ class RedditScraper(object):
         """
         This method will go over all the entries supplied
         and yield a dictionary of post metadata like upvote count,
-        the title, author and the link to the post.
+        the title, and the link to the post.
 
         A method/function that "yields" instead of "returns" is called a generator.
         Generators can't be accessed by index (by using the bracket notation
@@ -186,7 +186,7 @@ class RedditScraper(object):
 
         While for a 10 item list a generator might be overkill, it's good to
         know how to write a generator in case you need to work with a large number of
-        entries or a lot of entries.
+        entries or large entries themselves.
         :param entries: An iterable of reddit posts.
         :type entries: bs4.element.Tag
         """
@@ -237,13 +237,13 @@ if __name__ == '__main__':
     # after parsing our arguments, then we add a help text and define the type.
     parser.add_argument('subreddit', help='A subreddit on Reddit', type=str)
 
-    # We add our second, positional, but required argument for the output path
+    # We add our second, non-positional, but required argument for the output path
     parser.add_argument('-o', '--output', help='Output path', type=str, required=True)
 
     # We parse the user's input and check if all the required arguments were supplied
     args = parser.parse_args()
 
-    # We initialize an "r" instance with no value, to silence the IDE warning.
+    # We initialize the variable with no value, to silence the IDE warning.
     r = None
 
     # If we've gotten here, then the required arguments were supplied.
