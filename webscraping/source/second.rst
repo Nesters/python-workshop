@@ -12,6 +12,8 @@ The setup
 The setup is exactly the same as in :ref:`first-setup` in the first task, so you can just create another file in your
 current project, and remember to create a *Run Configuration* for it as well to make for easier debugging!
 
+.. _second-setup:
+
 The pieces
 ----------
 
@@ -109,6 +111,8 @@ Since we live in a day and age where the most popular public platforms, includin
 it's not really necessary to take the webscraping approach, but, at least now you have the knowledge to build handy CLI
 tools for your daily automated computing needs, and you know how to create CSV files programmatically with Python, therefore
 if you decide to join Nester's data-analysis workshop, you have the knowledge to create your own datasets :)
+
+Now, it's time to write a :doc:`third`!
 
 Solution
 --------
